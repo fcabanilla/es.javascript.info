@@ -1,127 +1,130 @@
-# Arrays 
+# Arrays
 
-Objects allow you to store keyed collections of values. That's fine.
+Los objetos permiten almacenar colecciones de valores con una clave, eso esta bien.
 
-But quite often we find that we need an *ordered collection*, where we have a 1st, a 2nd, a 3rd element and so on. For example, we need that to store a list of something: users, goods, HTML elements etc. 
+Pero a menudo nos encontramos en la situación que necesitamos una *colección ordenada*, donde tenemos un primer, un segundo, un tercer elemento, etc. Por ejemplo, necesitamos eso para almacenar una lista de algo: usuarios, productos, elementos HTML, etc.
 
-It is not convenient to use an object here, because it provides no methods to manage the order of elements. We can’t insert a new property “between” the existing ones. Objects are just not meant for such use.
+No es conveniente usar un objeto aquí, ya que no proporciona métodos para administrar el orden de los elementos. No podemos insertar una nueva propiedad "entre" las existentes. Los objetos simplemente no están destinados para tal uso.
 
-There exists a special data structure named `Array`, to store ordered collections. 
+Existe una estructura de datos especial llamada `Array`, para almacenar colecciones ordenadas.
 
 ## Declaration
 
-There are two syntaxes for creating an empty array:
+Hay dos sintaxis para crear una arreglo vacío:
+<!-- There are two syntaxes for creating an empty array: -->
 
 ```js
 let arr = new Array();
 let arr = [];
 ```
 
-Almost all the time, the second syntax is used. We can supply initial elements in the brackets:
+<!-- Almost all the time, the second syntax is used. We can supply initial elements in the brackets: -->
+
+Casi todo el tiempo, se usa la segunda sintaxis. Podemos suministrar elementos iniciales dentro de los corchetes:
 
 ```js
-let fruits = ["Apple", "Orange", "Plum"];
+let fruits = ["Manzana", "Naranja", "Ciruelas"];
 ```
 
-Array elements are numbered, starting with zero.
+Los elementos de los arreglos estan numerados, empezando desde el cero.
 
-We can get an element by its number in square brackets:
+Podemos obtener un elemento, por su numero entre los corchetes:
 
 ```js run
-let fruits = ["Apple", "Orange", "Plum"];
+let fruits = ["Manzana", "Naranja", "Ciruelas"];
 
-alert( fruits[0] ); // Apple
-alert( fruits[1] ); // Orange
-alert( fruits[2] ); // Plum
+alert( fruits[0] ); // Manzana
+alert( fruits[1] ); // Naranja
+alert( fruits[2] ); // Ciruelas
 ```
 
-We can replace an element:
+Podemos reemplazar un elemento:
 
 ```js
-fruits[2] = 'Pear'; // now ["Apple", "Orange", "Pear"]
+fruits[2] = 'Pera'; // ahora ["Manzana", "Naranja", "Pera"]
 ```
 
-...Or add a new one to the array:
+... O agregar un elemento nuevo al arreglo:
 
 ```js
-fruits[3] = 'Lemon'; // now ["Apple", "Orange", "Pear", "Lemon"]
+fruits[3] = 'Limon'; // ahora ["Manzana", "Naranja", "Pera" "Limon"]
 ```
 
-The total count of the elements in the array is its `length`:
+La cantidad total de elementos en el arreglo es `length`:
 
 ```js run
-let fruits = ["Apple", "Orange", "Plum"];
+let fruits = ["Manzana", "Naranja", "Ciruelas"];
 
 alert( fruits.length ); // 3
 ```
 
-We can also use `alert` to show the whole array.
+Tambien podemos usar `alert` para mostrar el arreglo entero.
 
 ```js run
-let fruits = ["Apple", "Orange", "Plum"];
+let fruits = ["Manzana", "Naranja", "Ciruelas"];
 
-alert( fruits ); // Apple,Orange,Plum
+alert( fruits ); // Manzana,Naranja,Ciruela
 ```
 
-An array can store elements of any type.
+Un arreglo puede guardar elementos de cualquier tipo.
 
-For instance:
+Por ejemplo:
 
 ```js run no-beautify
-// mix of values
-let arr = [ 'Apple', { name: 'John' }, true, function() { alert('hello'); } ];
+// mezcla de valores
+let arr = [ 'Manzana', { name: 'Juan' }, true, function() { alert('Hola'); } ];
 
-// get the object at index 1 and then show its name
-alert( arr[1].name ); // John
+// obtiene el objeto del arreglo en la posición 1 y luego muestra su nombre
+alert( arr[1].name ); // Juan
 
-// get the function at index 3 and run it
-arr[3](); // hello
+// obtiene la funcion del arreglo en la posición 3 y lo ejecuta
+arr[3](); // Hola
 ```
 
 
-````smart header="Trailing comma"
-An array, just like an object, may end with a comma:
-```js 
+````smart header="Coma final"
+Un arreglo, igual que un objeto, puede terminar con coma:
+```js
 let fruits = [
-  "Apple", 
-  "Orange", 
-  "Plum"*!*,*/!*
+  "Manzana",
+  "Naranja",
+  "Ciruela"*!*,*/!*
 ];
 ```
 
-The "trailing comma" style makes it easier to insert/remove items, because all lines become alike.
+El estilo de "Coma final" hace mas facil insertar/remover elementos, ya que todas las lineas se ven iguales.
 ````
 
 
-## Methods pop/push, shift/unshift
+## Metodo pop/push, shift/unshift
 
-A [queue](https://en.wikipedia.org/wiki/Queue_(abstract_data_type)) is one of most common uses of an array. In computer science, this means an ordered collection of elements which supports two operations:
+Una [cola](https://es.wikipedia.org/wiki/Cola_(inform%C3%A1tica)) es uno de los usos más comunes de un arreglo. En informática, esto significa una colección ordenada de elementos que admite dos operaciones:
 
-- `push` appends an element to the end.
-- `shift` get an element from the beginning, advancing the queue, so that the 2nd element becomes the 1st.
+- `push` agrega un elemento al final.
+- `shift` obtener un elemento desde el principio, avanzando la cola, de modo que el segundo elemento se convierta en el primero.
 
 ![](queue.svg)
 
-Arrays support both operations.
+Los arreglos soportan ambas operaciones.
 
-In practice we need it very often. For example, a queue of messages that need to be shown on-screen.
+En la practica los vamos a necesitar muy a menudo. Por ejemplo, una cola de mensajes que necesita ser mostrada en pantalla.
 
-There's another use case for arrays -- the data structure named [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)). 
+Hay otro caso de uso para los arreglos -- la estructura se llama [pila](https://es.wikipedia.org/wiki/Pila_(inform%C3%A1tica)).
 
-It supports two operations:
+Esta soporta dos operaciones:
 
-- `push` adds an element to the end.
-- `pop` takes an element from the end.
+- `push` agrega un elemento al final.
+- `pop` toma un elemento desde el final.
 
-So new elements are added or taken always from the "end".
+Entonces, nuevos elementos se agregan o toman siempre del "final".
 
-A stack is usually illustrated as a pack of cards: new cards are added to the top or taken from the top:
+Una pila generalmente se ilustra como un paquete de cartas: se agregan nuevas cartas en la parte superior o se toman de la parte superior:
 
 ![](stack.svg)
 
 For stacks, the latest pushed item is received first, that's also called LIFO (Last-In-First-Out) principle. For queues, we have FIFO (First-In-First-Out).
 
-Arrays in JavaScript can work both as a queue and as a stack. They allow you to add/remove elements both to/from the beginning or the end. 
+Arrays in JavaScript can work both as a queue and as a stack. They allow you to add/remove elements both to/from the beginning or the end.
 
 In computer science the data structure that allows it is called [deque](https://en.wikipedia.org/wiki/Double-ended_queue).
 
@@ -131,22 +134,22 @@ In computer science the data structure that allows it is called [deque](https://
 : Extracts the last element of the array and returns it:
 
     ```js run
-    let fruits = ["Apple", "Orange", "Pear"];
+    let fruits = ["Manzana", "Naranja", "Pera"];
 
-    alert( fruits.pop() ); // remove "Pear" and alert it
+    alert( fruits.pop() ); // remove "Pera" and alert it
 
-    alert( fruits ); // Apple, Orange
+    alert( fruits ); // Manzana, Naranja
     ```
 
 `push`
 : Append the element to the end of the array:
 
     ```js run
-    let fruits = ["Apple", "Orange"];
+    let fruits = ["Manzana", "Naranja"];
 
-    fruits.push("Pear");
+    fruits.push("Pera");
 
-    alert( fruits ); // Apple, Orange, Pear
+    alert( fruits ); // Manzana, Naranja, Pera
     ```
 
     The call `fruits.push(...)` is equal to `fruits[fruits.length] = ...`.
@@ -157,43 +160,43 @@ In computer science the data structure that allows it is called [deque](https://
 : Extracts the first element of the array and returns it:
 
     ```js
-    let fruits = ["Apple", "Orange", "Pear"];
+    let fruits = ["Manzana", "Naranja", "Pera"];
 
-    alert( fruits.shift() ); // remove Apple and alert it
+    alert( fruits.shift() ); // remove Manzana and alert it
 
-    alert( fruits ); // Orange, Pear
+    alert( fruits ); // Naranja, Pera
     ```
 
 `unshift`
 : Add the element to the beginning of the array:
 
     ```js
-    let fruits = ["Orange", "Pear"];
+    let fruits = ["Naranja", "Pera"];
 
-    fruits.unshift('Apple');
+    fruits.unshift('Manzana');
 
-    alert( fruits ); // Apple, Orange, Pear
+    alert( fruits ); // Manzana, Naranja, Pera
     ```
 
 Methods `push` and `unshift` can add multiple elements at once:
 
 ```js run
-let fruits = ["Apple"];
+let fruits = ["Manzana"];
 
-fruits.push("Orange", "Peach");
-fruits.unshift("Pineapple", "Lemon");
+fruits.push("Naranja", "Peach");
+fruits.unshift("PineManzana", "Lemon");
 
-// ["Pineapple", "Lemon", "Apple", "Orange", "Peach"]
+// ["PineManzana", "Lemon", "Manzana", "Naranja", "Peach"]
 alert( fruits );
 ```
 
 ## Internals
 
-An array is a special kind of object. The square brackets used to access a property `arr[0]` actually come from the object syntax. Numbers are used as keys. 
+An array is a special kind of object. The square brackets used to access a property `arr[0]` actually come from the object syntax. Numbers are used as keys.
 
 They extend objects providing special methods to work with ordered collections of data and also the `length` property. But at the core it's still an object.
 
-Remember, there are only 7 basic types in JavaScript. Array is an object and thus behaves like an object. 
+Remember, there are only 7 basic types in JavaScript. Array is an object and thus behaves like an object.
 
 For instance, it is copied by reference:
 
@@ -203,10 +206,10 @@ let fruits = ["Banana"]
 let arr = fruits; // copy by reference (two variables reference the same array)
 
 alert( arr === fruits ); // true
- 
-arr.push("Pear"); // modify the array by reference
 
-alert( fruits ); // Banana, Pear - 2 items now
+arr.push("Pera"); // modify the array by reference
+
+alert( fruits ); // Banana, Pera - 2 items now
 ```
 
 ...But what makes arrays really  special is their internal representation. The engine tries to store its elements in the contiguous memory area, one after another, just as depicted on the illustrations in this chapter, and there are other optimizations as well, to make arrays work really fast.
@@ -225,11 +228,11 @@ fruits.age = 25; // create a property with an arbitrary name
 
 That's possible, because arrays are objects at their base. We can add any properties to them.
 
-But the engine will see that we're working with the array as with a regular object. Array-specific optimizations are not suited for such cases and will be turned off, their benefits disappear.
+But the engine will see that we're working with the array as with a regular object. Array-specific optimizations are not suited for such cases and will be turned off, their benefits disapPera.
 
 The ways to misuse an array:
 
-- Add a non-numeric property like `arr.test = 5`. 
+- Add a non-numeric property like `arr.test = 5`.
 - Make holes, like: add `arr[0]` and then `arr[1000]` (and nothing between them).
 - Fill the array in the reverse order, like `arr[1000]`, `arr[999]` and so on.
 
@@ -280,7 +283,7 @@ The similar thing with the `push` method.
 One of the oldest ways to cycle array items is the `for` loop over indexes:
 
 ```js run
-let arr = ["Apple", "Orange", "Pear"];
+let arr = ["Manzana", "Naranja", "Pera"];
 
 *!*
 for (let i = 0; i < arr.length; i++) {
@@ -292,11 +295,11 @@ for (let i = 0; i < arr.length; i++) {
 But for arrays there is another form of loop, `for..of`:
 
 ```js run
-let fruits = ["Apple", "Orange", "Plum"];
+let fruits = ["Manzana", "Naranja", "Ciruelas"];
 
 // iterates over array elements
 for (let fruit of fruits) {
-  alert( fruit ); 
+  alert( fruit );
 }
 ```
 
@@ -305,12 +308,12 @@ The `for..of` doesn't give access to the number of the current element, just its
 Technically, because arrays are objects, it is also possible to use `for..in`:
 
 ```js run
-let arr = ["Apple", "Orange", "Pear"];
+let arr = ["Manzana", "Naranja", "Pera"];
 
 *!*
 for (let key in arr) {
 */!*
-  alert( arr[key] ); // Apple, Orange, Pear
+  alert( arr[key] ); // Manzana, Naranja, Pera
 }
 ```
 
@@ -333,12 +336,12 @@ For instance, a single element with a large index gives a big length:
 
 ```js run
 let fruits = [];
-fruits[123] = "Apple";
+fruits[123] = "Manzana";
 
 alert( fruits.length ); // 124
 ```
 
-Note that we usually don't use arrays like that. 
+Note that we usually don't use arrays like that.
 
 Another interesting thing about the `length` property is that it's writable.
 
@@ -362,7 +365,7 @@ So, the simplest way to clear the array is: `arr.length = 0;`.
 There is one more syntax to create an array:
 
 ```js
-let arr = *!*new Array*/!*("Apple", "Pear", "etc");
+let arr = *!*new Array*/!*("Manzana", "Pera", "etc");
 ```
 
 It's rarely used, because square brackets `[]` are shorter. Also there's a tricky feature with it.
@@ -445,7 +448,7 @@ Array is a special kind of object, suited to storing and managing ordered data i
 
     The call to `new Array(number)` creates an array with the given length, but without elements.
 
-- The `length` property is the array length or, to be precise, its last numeric index plus one. It is auto-adjusted by array methods. 
+- The `length` property is the array length or, to be precise, its last numeric index plus one. It is auto-adjusted by array methods.
 - If we shorten `length` manually, the array is truncated.
 
 We can use an array as a deque with the following operations:
@@ -461,4 +464,3 @@ To loop over the elements of the array:
   - `for (let i in arr)` -- never use.
 
 We will return to arrays and study more methods to add, remove, extract elements and sort arrays in the chapter <info:array-methods>.
-

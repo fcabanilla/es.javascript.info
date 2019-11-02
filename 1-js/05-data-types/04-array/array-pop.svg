@@ -1,69 +1,323 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="479px" height="148px" viewBox="0 0 479 148" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
-    <title>array-pop.svg</title>
-    <desc>Created with sketchtool.</desc>
-    <g id="array" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="array-pop.svg">
-            <rect id="Rectangle-1" stroke="#E8C48E" stroke-width="2" fill="#FFF9EB" x="103" y="82" width="35" height="52"></rect>
-            <rect id="Rectangle-2" stroke="#E8C48E" stroke-width="2" fill="#FFF9EB" x="139" y="82" width="35" height="52"></rect>
-            <text id="0" font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="117" y="112">0</tspan>
-            </text>
-            <text id="1" font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="154" y="112">1</tspan>
-            </text>
-            <rect id="Rectangle-3" stroke="#E8C48E" stroke-width="2" fill="#FFF9EB" x="175" y="82" width="35" height="52"></rect>
-            <text id="2" font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="190" y="112">2</tspan>
-            </text>
-            <rect id="Rectangle-4" stroke="#E8C48E" stroke-width="2" fill="#FFF9EB" x="211" y="82" width="35" height="52"></rect>
-            <text id="3" font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#EE6B47">
-                <tspan x="226" y="112">3</tspan>
-            </text>
-            <text id="&quot;Apple&quot;" transform="translate(114.044088, 48.948024) rotate(-89.000000) translate(-114.044088, -48.948024) " font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="84.5440879" y="53.4480235">"Apple"</tspan>
-            </text>
-            <text id="&quot;Orange&quot;" transform="translate(151.052814, 44.448100) rotate(-89.000000) translate(-151.052814, -44.448100) " font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="117.052814" y="48.9480997">"Orange"</tspan>
-            </text>
-            <text id="&quot;Pear&quot;" transform="translate(187.535362, 52.447947) rotate(-89.000000) translate(-187.535362, -52.447947) " font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="162.035362" y="56.9479474">"Pear"</tspan>
-            </text>
-            <text id="&quot;Lemon&quot;" transform="translate(229.044088, 48.948024) rotate(-89.000000) translate(-229.044088, -48.948024) " font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#EE6B47">
-                <tspan x="199.544088" y="53.4480235">"Lemon"</tspan>
-            </text>
-            <text id="length-=-4" font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="8" y="59">length = 4</tspan>
-            </text>
-            <polygon id="Shape" fill="#EE6B47" transform="translate(306.000000, 107.500000) rotate(-90.000000) translate(-306.000000, -107.500000) " points="306 137 315 120.393834 309 120.393834 309 78 303 78 303 120.393834 297 120.393834"></polygon>
-            <text id="clear" font-family="OpenSans-Regular, Open Sans" font-size="14" font-weight="normal" fill="#EE6B47">
-                <tspan x="287" y="96">clear</tspan>
-            </text>
-            <rect id="Rectangle-7" stroke="#E8C48E" stroke-width="2" fill="#FFF9EB" x="363" y="82" width="35" height="52"></rect>
-            <rect id="Rectangle-5" stroke="#E8C48E" stroke-width="2" fill="#FFF9EB" x="399" y="82" width="35" height="52"></rect>
-            <text id="-1" font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="377" y="112">0</tspan>
-            </text>
-            <text id="-2" font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="414" y="112">1</tspan>
-            </text>
-            <rect id="Rectangle-6" stroke="#E8C48E" stroke-width="2" fill="#FFF9EB" x="435" y="82" width="35" height="52"></rect>
-            <text id="-3" font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="450" y="112">2</tspan>
-            </text>
-            <text id="&quot;Apple&quot;" transform="translate(374.044088, 48.948024) rotate(-89.000000) translate(-374.044088, -48.948024) " font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="344.544088" y="53.4480235">"Apple"</tspan>
-            </text>
-            <text id="&quot;Orange&quot;" transform="translate(411.052814, 44.448100) rotate(-89.000000) translate(-411.052814, -44.448100) " font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="377.052814" y="48.9480997">"Orange"</tspan>
-            </text>
-            <text id="&quot;Pear&quot;" transform="translate(447.535362, 52.447947) rotate(-89.000000) translate(-447.535362, -52.447947) " font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="422.035362" y="56.9479474">"Pear"</tspan>
-            </text>
-            <text id="length-=-3" font-family="PTMono-Regular, PT Mono" font-size="14" font-weight="normal" fill="#8A704D">
-                <tspan x="263" y="59">length = 3</tspan>
-            </text>
-        </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="479px"
+   height="148px"
+   viewBox="0 0 479 148"
+   version="1.1"
+   id="svg3476"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="array-pop.svg"
+   inkscape:export-filename="/home/fcabanilla/tutoriales/js/es.javascript.info/1-js/05-data-types/04-array/array-pop.svg.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata3550">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3548" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1024"
+     id="namedview3546"
+     showgrid="false"
+     inkscape:zoom="3.6346555"
+     inkscape:cx="239.5"
+     inkscape:cy="74"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="array-pop.svg" />
+  <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+  <title
+     id="title3478">array-pop.svg</title>
+  <desc
+     id="desc3480">Created with sketchtool.</desc>
+  <g
+     id="array"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       id="array-pop.svg">
+      <rect
+         id="Rectangle-1"
+         stroke="#E8C48E"
+         stroke-width="2"
+         fill="#FFF9EB"
+         x="103"
+         y="82"
+         width="35"
+         height="52" />
+      <rect
+         id="Rectangle-2"
+         stroke="#E8C48E"
+         stroke-width="2"
+         fill="#FFF9EB"
+         x="139"
+         y="82"
+         width="35"
+         height="52" />
+      <text
+         id="0"
+         font-family="PTMono-Regular, PT Mono"
+         font-size="14"
+         font-weight="normal"
+         fill="#8A704D">
+        <tspan
+           x="117"
+           y="112"
+           id="tspan3487">0</tspan>
+      </text>
+      <text
+         id="1"
+         font-family="PTMono-Regular, PT Mono"
+         font-size="14"
+         font-weight="normal"
+         fill="#8A704D">
+        <tspan
+           x="154"
+           y="112"
+           id="tspan3490">1</tspan>
+      </text>
+      <rect
+         id="Rectangle-3"
+         stroke="#E8C48E"
+         stroke-width="2"
+         fill="#FFF9EB"
+         x="175"
+         y="82"
+         width="35"
+         height="52" />
+      <text
+         id="2"
+         font-family="PTMono-Regular, PT Mono"
+         font-size="14"
+         font-weight="normal"
+         fill="#8A704D">
+        <tspan
+           x="190"
+           y="112"
+           id="tspan3494">2</tspan>
+      </text>
+      <rect
+         id="Rectangle-4"
+         stroke="#E8C48E"
+         stroke-width="2"
+         fill="#FFF9EB"
+         x="211"
+         y="82"
+         width="35"
+         height="52" />
+      <text
+         id="3"
+         font-family="PTMono-Regular, PT Mono"
+         font-size="14"
+         font-weight="normal"
+         fill="#EE6B47">
+        <tspan
+           x="226"
+           y="112"
+           id="tspan3498">3</tspan>
+      </text>
+      <text
+         id="&quot;Apple&quot;"
+         transform="matrix(0.01745241,-0.9998477,0.9998477,0.01745241,63.113175,162.12048)"
+         font-size="14"
+         font-weight="normal"
+         style="font-weight:normal;font-size:14px;font-family:PTMono-Regular, 'PT Mono';fill:#8a704d">
+        <tspan
+           x="84.54409"
+           y="53.448025"
+           id="tspan3501">&quot;Manzana&quot;</tspan>
+      </text>
+      <text
+         id="&quot;Orange&quot;"
+         transform="matrix(0.01745241,-0.9998477,0.9998477,0.01745241,103.97525,194.70218)"
+         font-size="14"
+         font-weight="normal"
+         style="font-weight:normal;font-size:14px;font-family:PTMono-Regular, 'PT Mono';fill:#8a704d">
+        <tspan
+           x="117.05281"
+           y="48.948101"
+           id="tspan3504">&quot;Naranja&quot;</tspan>
+      </text>
+      <text
+         id="&quot;Pear&quot;"
+         transform="matrix(0.01745241,-0.9998477,0.9998477,0.01745241,131.82246,239.0394)"
+         font-size="14"
+         font-weight="normal"
+         style="font-weight:normal;font-size:14px;font-family:PTMono-Regular, 'PT Mono';fill:#8a704d">
+        <tspan
+           x="162.03535"
+           y="56.947948"
+           id="tspan3507">&quot;Pera&quot;</tspan>
+      </text>
+      <text
+         id="&quot;Lemon&quot;"
+         transform="matrix(0.01745241,-0.9998477,0.9998477,0.01745241,176.10615,277.10297)"
+         font-size="14"
+         font-weight="normal"
+         style="font-weight:normal;font-size:14px;font-family:PTMono-Regular, 'PT Mono';fill:#ee6b47">
+        <tspan
+           x="199.54408"
+           y="53.448025"
+           id="tspan3510">&quot;Limon&quot;</tspan>
+      </text>
+      <text
+         id="length-=-4"
+         font-size="14"
+         font-weight="normal"
+         style="font-weight:normal;font-size:14px;font-family:PTMono-Regular, 'PT Mono';fill:#8a704d">
+        <tspan
+           x="8"
+           y="59"
+           id="tspan3513">longitud= 4</tspan>
+      </text>
+      <polygon
+         id="Shape"
+         fill="#EE6B47"
+         transform="translate(306.000000, 107.500000) rotate(-90.000000) translate(-306.000000, -107.500000) "
+         points="306 137 315 120.393834 309 120.393834 309 78 303 78 303 120.393834 297 120.393834" />
+      <text
+         id="clear"
+         font-family="OpenSans-Regular, Open Sans"
+         font-size="14"
+         font-weight="normal"
+         fill="#EE6B47">
+        <tspan
+           x="287"
+           y="96"
+           id="tspan3517">clear</tspan>
+      </text>
+      <rect
+         id="Rectangle-7"
+         stroke="#E8C48E"
+         stroke-width="2"
+         fill="#FFF9EB"
+         x="363"
+         y="82"
+         width="35"
+         height="52" />
+      <rect
+         id="Rectangle-5"
+         stroke="#E8C48E"
+         stroke-width="2"
+         fill="#FFF9EB"
+         x="399"
+         y="82"
+         width="35"
+         height="52" />
+      <text
+         id="-1"
+         font-family="PTMono-Regular, PT Mono"
+         font-size="14"
+         font-weight="normal"
+         fill="#8A704D">
+        <tspan
+           x="377"
+           y="112"
+           id="tspan3522">0</tspan>
+      </text>
+      <text
+         id="-2"
+         font-family="PTMono-Regular, PT Mono"
+         font-size="14"
+         font-weight="normal"
+         fill="#8A704D">
+        <tspan
+           x="414"
+           y="112"
+           id="tspan3525">1</tspan>
+      </text>
+      <rect
+         id="Rectangle-6"
+         stroke="#E8C48E"
+         stroke-width="2"
+         fill="#FFF9EB"
+         x="435"
+         y="82"
+         width="35"
+         height="52" />
+      <text
+         id="-3"
+         font-family="PTMono-Regular, PT Mono"
+         font-size="14"
+         font-weight="normal"
+         fill="#8A704D">
+        <tspan
+           x="450"
+           y="112"
+           id="tspan3529">2</tspan>
+      </text>
+      <text
+         id="text3531"
+         transform="matrix(0.01745241,-0.9998477,0.9998477,0.01745241,318.57555,422.08088)"
+         font-size="14"
+         font-weight="normal"
+         style="font-weight:normal;font-size:14px;font-family:PTMono-Regular, 'PT Mono';fill:#8a704d">
+        <tspan
+           x="344.5441"
+           y="53.448025"
+           id="tspan3533">&quot;Manzana&quot;</tspan>
+      </text>
+      <text
+         id="text3535"
+         transform="matrix(0.01745241,-0.9998477,0.9998477,0.01745241,359.43762,454.66258)"
+         font-size="14"
+         font-weight="normal"
+         style="font-weight:normal;font-size:14px;font-family:PTMono-Regular, 'PT Mono';fill:#8a704d">
+        <tspan
+           x="377.05283"
+           y="48.948101"
+           id="tspan3537">&quot;Naranja&quot;</tspan>
+      </text>
+      <text
+         id="text3539"
+         transform="matrix(0.01745241,-0.9998477,0.9998477,0.01745241,387.28483,498.9998)"
+         font-size="14"
+         font-weight="normal"
+         style="font-weight:normal;font-size:14px;font-family:PTMono-Regular, 'PT Mono';fill:#8a704d">
+        <tspan
+           x="422.03537"
+           y="56.947948"
+           id="tspan3541">&quot;Pera&quot;</tspan>
+      </text>
+      <text
+         id="length-=-3"
+         font-size="14"
+         font-weight="normal"
+         style="font-weight:normal;font-size:14px;font-family:PTMono-Regular, 'PT Mono';fill:#8a704d"
+         inkscape:export-xdpi="90"
+         inkscape:export-ydpi="90">
+        <tspan
+           x="263"
+           y="59"
+           id="tspan3544">longitud= 3</tspan>
+      </text>
     </g>
+  </g>
 </svg>
